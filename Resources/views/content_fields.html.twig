@@ -1,0 +1,9 @@
+{% extends 'EzPublishCoreBundle::content_fields.html.twig' %}
+{% block ezprice_field %}
+{% spaceless %}
+    {% if field.value %}
+        {% set field_value = field.value.value %}
+        {{ block( 'simple_inline_field' ) }}
+    {% endif %}
+{% endspaceless %}
+{% endblock %}

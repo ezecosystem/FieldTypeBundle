@@ -1,0 +1,4 @@
+system:
+    fre:
+        field_templates:
+            - {template: "BrunoChirezFieldTypeBundle::content_fields.html.twig", priority: 10}
